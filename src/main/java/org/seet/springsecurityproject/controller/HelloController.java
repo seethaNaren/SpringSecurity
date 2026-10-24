@@ -8,7 +8,14 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String returnResponse(){
+
         return "Welcome to spring security";
+    }
+
+    @GetMapping("/welcome")
+    public String welcome(){
+
+        return "Welcome message";
     }
 
 }
